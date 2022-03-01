@@ -1,0 +1,85 @@
+div, body, h2, h3, p {
+    padding: 0;
+    margin: 0;
+}
+
+.overlay .bg {
+    background-image: url("https://images.wallpapersden.com/image/download/anonymous-mask-man_bGVmam2UmZqaraWkpJRmbmdlrWZlbWU.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: #0009;
+    display: none;
+}
+
+.modal {
+    margin: auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 50px #000a;
+}
+
+.top-options {
+    max-height: 50px;
+    padding: 10px;
+    text-align: right;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    width: 750px;
+    color: #a22;
+}
+
+.modal-content {
+    width: 700px;
+    padding: 40px;
+    font-family: sans-serif ;
+    color: #333;
+}
+
+.modal-content h2 {
+    font-size: 30px;
+}
+
+.modal-content p {
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+
+.open_modal {
+    padding: 9px 18px;
+    margin: 50px;
+    font-size: 25px;
+    border: none;
+    box-shadow: 0px 0px 25px #0007;
+}
+
+@keyframes aparecer  {
+    0% {
+        margin-top: 200px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 300px;
+        opacity: 1;
+    }
+}
+
+@keyframes desaparecer  {
+    0% {
+        margin-top: 300px;
+        opacity: 1;
+    }
+    100% {
+        margin-top: 200px;
+        opacity: 0;
+    }
+}
